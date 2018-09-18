@@ -1,21 +1,23 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <!-- <img src="./assets/logo.png"> -->
     <!-- <HelloWorld/> -->
-
-    <dthree/>
+    <!-- <dthree/> -->
+    <tree/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
-import dthree from './components/dthree'
+import HelloWorld from './components/HelloWorld';
+import dthree from './components/dthree';
+import tree from './components/tree';
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    dthree
+    dthree,
+    tree,
   }
 }
 </script>

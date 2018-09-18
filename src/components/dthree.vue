@@ -29,7 +29,8 @@
 		name: 'dthree',
 		data() {
 			return {
-				
+				msg: 'unregistered',
+
 			}
 		},
 		methods: {
@@ -55,6 +56,12 @@
 				d3.selectAll("p").style("color", function(d, i) { // ele, index
 				  return i % 2 ? "#f0f" : "#ee0";
 				});
+				setTimeout( () => {
+					var p = d3.select("body")
+					  .selectAll("p")
+					  .data([4, 8, 15, 16, 23, 42])
+					    .text(function(d) { return d; });
+		    }, 1000)
 
 			},
 			arrdata() {
@@ -73,7 +80,7 @@
 
 
 
-				  
+
 		},
 		mounted() {
 			this.$nextTick(() => {
